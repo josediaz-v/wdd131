@@ -7,7 +7,7 @@
     --tertiary-color-transparent: #36363680;
     --accent1-color: #ffffff;
     --accent2-color: #888888;
-
+    --accent3-color: #424242;
 
     --title-font: 'Roboto', sans-serif;
     --text-font: 'Merriweather', sans-serif;
@@ -35,6 +35,8 @@ header span {
 
 /* Nav */
 nav {
+    display: flex;
+    flex-direction: column;
     font-family: var(--title-font);
     background-color: var(--tertiary-color);
     text-align: center;
@@ -43,6 +45,10 @@ nav {
 nav a {
     color: var(--accent1-color);
     text-decoration: none;
+}
+
+nav:hover {
+    background-color: var(--accent3-color);
 }
 
 nav a:hover {
