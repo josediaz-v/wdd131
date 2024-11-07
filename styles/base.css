@@ -147,6 +147,7 @@ main {
 
 .peru figcaption {
     font-family: cursive;
+    color: var(--tertiary-color);
 }
 
 .peru p {
