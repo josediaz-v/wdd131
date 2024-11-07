@@ -4,35 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Diaz">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Diaz - About Me">
     <meta name="author" content="Jose Diaz">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Jose Diaz</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jose Diaz</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
-    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
     <header>
-        <h3>Header Content</h3>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Jose Diaz</span></h1>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover.html">Projects</a></li>
-                <li><a href="directory.html">Services</a></li>
-                <li><a href="join.html">Contact Us</a></li>
+                <li><a href="https://www.linkedin.com/in/josediazv/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/1?lang=eng&id=p1-p5#p1"
+                        target="_blank">Scripture</a></li>
+                <li><a href="finalproject.html" target="_blank">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h4>Main Content</h4>
-        <aside>
-            <h4>Aside Content</h4>
-        </aside>
+        <section class="card">
+            <div class="introduction">
+                <h4>About Me</h4>
+                <img src="images/picture.webp" alt="Jose Diaz">
+                <P>My name is Jose and I go by Pepe. I was born in Perú and live with my family in New Jersey. I am
+                    currently working as a NetSuite developer at a jewelry importer. My children are my world and I love
+                    spending time with them. I love to play video games and learn new things.</P>
+            </div>
+            <div class="peru">
+                <h3>Lima, Perú</h3>
+                <figure>
+                    <img src="images/peru.webp" alt="Perú">
+                    <figcaption>Official Flag of Perú</figcaption>
+                </figure>
+                <p>Lima, the capital of Peru, lies on the country's arid Pacific coast. Though its colonial center is
+                    preserved, it's a bustling metropolis and one of South America’s largest cities. It's home to the
+                    Museo
+                    Larco collection of pre-Columbian art and the Museo de la Nación, tracing the history of Peru’s
+                    ancient
+                    civilizations. The Plaza de Armas and the 16th-century cathedral are the heart of old Lima Centro.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h4>Web Dev Resources</h4>
+            <ul>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://github.com/iamismile/web-dev-resources" target="_blank">Web-Dev-Resources</a></li>
+                <li><a href="https://web-dev-resources.com/#/" target="_blank">Awesome Web Development Resources</a>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>Footer Content</p>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastModified">Last Modification: </p>
     </footer>
+    <script src="scripts/getDate.js"></script>
 </body>
 
 </html>

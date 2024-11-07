@@ -7,10 +7,9 @@
     --tertiary-color-transparent: #80130880;
     --accent1-color: #ffffff;
     --accent2-color: #550e06;
+    --accent2-color-transparent: #550e0680;
     --accent3-color: #daa039;
-    --accent4-color: #07a302;
-    --accent5-color: #eee;
-    --accent6-color: #8ea9c288;
+    --accent4-color: #eee;
 
     --title-font: 'Roboto', sans-serif;
     --text-font: 'Merriweather', sans-serif;
@@ -35,6 +34,10 @@ header h3 {
 a {
     color: var(--accent1-color);
     text-decoration: none;
+}
+
+.active {
+    background-color: var(--accent2-color-transparent);
 }
 
 nav {
@@ -80,7 +83,7 @@ main h4 {
 }
 
 aside {
-    background-color: #eee;
+    background-color: var(--accent4-color);
 }
 
 /* Footer */
