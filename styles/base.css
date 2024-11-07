@@ -73,7 +73,10 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     font-family: var(--text-font);
+    justify-content: center;
     min-height: 500px;
+    max-width: 2000px;
+    justify-self: center;
 }
 
 .card {
