@@ -164,6 +164,6 @@ footer {
     height: 100px;
 }
 
-footer #lastModified {
+footer #lastmodified {
     color: var(--secondary-color);
 }
