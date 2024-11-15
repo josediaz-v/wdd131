@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #e7e7e7;
+    --secondary-color: #000;
+    --tertiary-color: #fff;
+    --accent-color: #8d8d8d;
+
+    --title-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+section {
+    background-color: var(--primary-color);
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    justify-self: center;
+}
+
+section label {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+section input {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px var(--secondary-color);
+    box-shadow: 1px 1px;
+}
+
+section button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: solid 1px var(--accent-color);
+    border-radius: 0.2rem;
+}
+
+section ul {
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
