@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #aec2f8;
+    --secondary-color: #000;
+    --tertiary-color: #fff;
+    --accent-color: #bbb;
+
+    --title-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--title-font);
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+}
