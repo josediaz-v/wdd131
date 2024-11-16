@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Diaz - Temples">
+    <meta name="author" content="Jose Diaz">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jose Diaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="temples.html">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Large</a></li>
+                <li><a href="">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Home</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple1-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple1-medium.webp">
+                    <img src="images/temple1-small.webp" alt="Arequipa Perú">
+                </picture>
+                <figcaption>Arequipa Perú</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple2-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple2-medium.webp">
+                    <img src="images/temple2-small.webp" alt="Bern Switzerland">
+                </picture>
+                <figcaption>Bern Switzerland</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple3-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple3-medium.webp">
+                    <img src="images/temple3-small.webp" alt="Calgary Alberta">
+                </picture>
+                <figcaption>Calgary Alberta</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple4-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple4-medium.webp">
+                    <img src="images/temple4-small.webp" alt="Cardston Alberta">
+                </picture>
+                <figcaption>Cardston Alberta</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple5-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple5-medium.webp">
+                    <img src="images/temple5-small.webp" alt="Chicago Illinois">
+                </picture>
+                <figcaption>Chicago Illinois</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple6-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple6-medium.webp">
+                    <img src="images/temple6-small.webp" alt="Fort Collins Colorado">
+                </picture>
+                <figcaption>Fort Collins Colorado</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple7-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple7-medium.webp">
+                    <img src="images/temple7-small.webp" alt="Lubbock Texas">
+                </picture>
+                <figcaption>Lubbock Texas</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple8-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple8-medium.webp">
+                    <img src="images/temple8-small.webp" alt="Lima Perú">
+                </picture>
+                <figcaption>Lima Perú</figcaption>
+            </figure>
+            <figure>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/temple9-large.webp">
+                    <source media="(max-width: 1500px)" srcset="images/temple9-medium.webp">
+                    <img src="images/temple9-small.webp" alt="Logan Utah">
+                </picture>
+                <figcaption>Logan Utah</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
+    </footer>
+    <script src="scripts/temples.js" defer></script>
+</body>
+
+</html>
