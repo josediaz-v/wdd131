@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jose Diaz - About Me">
+    <meta name="author" content="Jose Diaz">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jose Diaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Perú</h1>
+        <div class="bar"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/gallito-large.webp" media="(min-width: 750px)">
+                <img src="images/gallito-small.webp" alt="Temple name and location" width="500" height="535px">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="titles">
+                <p>Area:</p>
+                <p>Population:</p>
+                <p>Capital:</p>
+                <p>Languages:</p>
+                <p>Currency:</p>
+                <p>Time Zone:</p>
+                <p>Calling Code:</p>
+                <p>Internet TLD:</p>
+            </div>
+            <div class="info">
+                <p>1,285,216 sq km</p>
+                <p>34,350,000</p>
+                <p>Lima</p>
+                <p>Spanish, Quechua, Aymara</p>
+                <p>Nuevo Sol</p>
+                <p>UTC-5</p>
+                <p>+51</p>
+                <p>.pe</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="titles">
+                <p>Temperature:</p>
+                <p>Conditions:</p>
+                <p>Wind:</p>
+                <p>Wind Chill:</p>
+            </div>
+            <div class="info">
+                <p>25° C</p>
+                <p>Sunny</p>
+                <p>5 km/h</p>
+                <p id="windChill">24.5 °C</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+
+</html>
