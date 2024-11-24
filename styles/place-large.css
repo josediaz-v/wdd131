@@ -34,6 +34,21 @@
         margin-top: 1rem
     }
 
+    .weather h2::after {
+        display: block;
+        position:relative;
+        right: -70px;
+        top: -35px;
+        z-index: 1;
+        content: "🌞";
+        font-size: 2rem;
+        padding-left: 3rem;
+    }
+
+    .svg {
+        display: none;
+    }
+
     .data,
     .weather {
         padding: 1rem;
