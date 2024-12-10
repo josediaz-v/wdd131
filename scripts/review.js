@@ -1,4 +1,4 @@
-let reviewCount = localStorage.getItem('reviewCount') ? parseInt(localStorage.getItem('reviewCount')) : 0;
+let reviewCount = localStorage.getItem('reviewCount') ? parseInt(localStorage.getItem('reviewCount')) : 1;
 
 document.getElementById('reviewCounter').textContent = `Number of Reviews: ${reviewCount}`;
 
