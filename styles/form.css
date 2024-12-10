@@ -3,7 +3,7 @@
     --color2: #e5dcee;
     --color3: #363636;
     --color4: #ffffff;
-    --color5:  rgb(2, 55, 155);
+    --color5: rgb(2, 55, 155);
 
     --title-font: 'Roboto', sans-serif;
     --text-font: 'Merriweather', sans-serif;
@@ -16,7 +16,8 @@ body {
     justify-self: center;
 }
 
-header, footer{
+header,
+footer {
     font-family: var(--title-font);
     background-color: var(--color1);
     color: var(--color4);
@@ -31,7 +32,10 @@ form {
     margin-bottom: 1rem;
 }
 
-input[type="text"], input[type="textarea"], input[type="submit"], input[type="date"] {
+input[type="text"],
+input[type="textarea"],
+input[type="submit"],
+input[type="date"] {
     padding: 1rem;
     width: 95%;
     border: none;
@@ -45,9 +49,9 @@ select {
     margin-top: 0.5rem;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     margin: 0.5rem;
-    transform : scale(1.5);
+    transform: scale(1.5);
 }
 
 input[type="submit"] {
@@ -72,7 +76,7 @@ fieldset {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    transform : scale(1.5);
+    transform: scale(1.5);
 }
 
 .star-label {
@@ -82,7 +86,7 @@ fieldset {
     margin: 10px;
 }
 
-form label{
+form label {
     display: block;
 }
 
@@ -104,4 +108,8 @@ form label{
     text-align: center;
     align-content: center;
     background-color: var(--color2);
+}
+
+.checkApply {
+    font-style: italic;
 }
