@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,64 +12,68 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
     <header>
-        <h2>Product Review</h2>
+        <h1>Product Review</h1>
     </header>
     <main>
         <form method="get" action="review.html" class="form">
             <fieldset>
-            <label>
-                Product Name
-                <select name="product" id="product" required>
-                    <option value="" disabled selected>Choose a Product...</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset class="rating">
-            <legend>Overall Rating</legend>
-            <div class="star-rating">
-                <label class="star-label">
-                    <span class="star">⭐</span>
-                    <input type="radio" name="rating" value="1">
+                <label>
+                    Product Name
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Choose a Product...</option>
+                    </select>
                 </label>
-                <label class="star-label">
-                    <span class="star">⭐⭐</span>
-                    <input type="radio" name="rating" value="2">
-                </label>
-                <label class="star-label">
-                    <span class="star">⭐⭐⭐</span>
-                    <input type="radio" name="rating" value="3">
-                </label>
-                <label class="star-label">
-                    <span class="star">⭐⭐⭐⭐</span>
-                    <input type="radio" name="rating" value="4">
-                </label>
-                <label class="star-label">
-                    <span class="star">⭐⭐⭐⭐⭐</span>
-                    <input type="radio" name="rating" value="5">
-                </label>
-            </div>
-        </fieldset>        
-        <fieldset>
-            <label>Date of Instalation<input type="date" name="instalationDate" id="instalationDate" required></label>
-        </fieldset>
-        <fieldset>
-            <legend> Which features did you find useful in the product? (Check all that apply)</legend>
-            <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
-            <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
-            <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
-            <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
-        </fieldset>
-        <fieldset>
-            <label>Written Review <span class="optional">(Optional)</span><textarea name="review" id="review"></textarea></label>
-        </fieldset>
-        <fieldset>
-            <label>Your Name <span class="optional">(Optional)</span><input type="text" name="userName" id="userName"></label>
-        </fieldset>
-        <input type="submit" value="Post Review" class="button">
+            </fieldset>
+            <fieldset class="rating">
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <label class="star-label">
+                        <span class="star">⭐</span>
+                        <input type="radio" name="rating" value="1">
+                    </label>
+                    <label class="star-label">
+                        <span class="star">⭐⭐</span>
+                        <input type="radio" name="rating" value="2">
+                    </label>
+                    <label class="star-label">
+                        <span class="star">⭐⭐⭐</span>
+                        <input type="radio" name="rating" value="3">
+                    </label>
+                    <label class="star-label">
+                        <span class="star">⭐⭐⭐⭐</span>
+                        <input type="radio" name="rating" value="4">
+                    </label>
+                    <label class="star-label">
+                        <span class="star">⭐⭐⭐⭐⭐</span>
+                        <input type="radio" name="rating" value="5">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Date of Instalation<input type="date" name="instalationDate" id="instalationDate"
+                        required></label>
+            </fieldset>
+            <fieldset>
+                <legend> Which features did you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <label>Written Review <span class="optional">(Optional)</span><textarea name="review"
+                        id="review"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <label>Your Name <span class="optional">(Optional)</span><input type="text" name="userName"
+                        id="userName"></label>
+            </fieldset>
+            <input type="submit" value="Post Review" class="button">
         </form>
-    </main>    
+    </main>
     <footer>
         <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
             United States</p>
@@ -77,4 +82,5 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/form.js" defer></script>
 </body>
+
 </html>
