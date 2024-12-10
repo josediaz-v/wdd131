@@ -1,0 +1,107 @@
+:root {
+    --color1: #230d2b;
+    --color2: #e5dcee;
+    --color3: #363636;
+    --color4: #ffffff;
+    --color5:  rgb(2, 55, 155);
+
+    --title-font: 'Roboto', sans-serif;
+    --text-font: 'Merriweather', sans-serif;
+}
+
+body {
+    max-width: 900px;
+    min-width: 300px;
+    width: 100%;
+    justify-self: center;
+}
+
+header, footer{
+    font-family: var(--title-font);
+    background-color: var(--color1);
+    color: var(--color4);
+    justify-items: center;
+    padding: 1rem;
+}
+
+form {
+    font-family: var(--text-font);
+    background-color: var(--color2);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="textarea"], input[type="submit"], input[type="date"] {
+    padding: 1rem;
+    width: 95%;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+select {
+    padding: 1rem;
+    width: 99%;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+input[type="checkbox"]{
+    margin: 0.5rem;
+    transform : scale(1.5);
+}
+
+input[type="submit"] {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+}
+
+textarea {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 95%;
+    border: none;
+    height: 10rem;
+}
+
+fieldset {
+    padding: 1rem;
+    border: none;
+}
+
+.star-rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transform : scale(1.5);
+}
+
+.star-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+form label{
+    display: block;
+}
+
+.optional {
+    color: var(--color5);
+}
+
+.button {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.review {
+    height: 30rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--text-font);
+    text-align: center;
+    align-content: center;
+    background-color: var(--color2);
+}
