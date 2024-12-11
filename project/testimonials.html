@@ -10,23 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 
 <body>
     <header>
+        <section class="title">
+            <div class="lema">
+                <span class="sparkling">Sparkling</span><span class="clean">Clean</span>
+                <span class="cleaning">#1 in Cleaning</span>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+        </section>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="booking.html">Book Now</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo">
     </header>
-
-    <section class="testimonials">
-        <h1>What Our Customers Say</h1>
-        <div class="testimonial
+    <main>
+        <section class="hero">
+            <h1>What Our Customers Say</h1>
+            <p>Sparkling Clean is a reputable house cleaning service that takes pride in delivering outstanding cleaning results. With years of experience and a passion for cleanliness, we are committed to exceeding your expectations.</p>
+            <a href="booking.html" class="cta-button">Book Your Cleaning Today</a>
+        </section>
+        <section class="card">
+            <div class="testimonial"> </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>

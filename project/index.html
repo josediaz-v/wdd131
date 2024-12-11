@@ -10,48 +10,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 
 <body>
     <header>
+        <section class="title">
+            <div class="lema">
+                <span class="sparkling">Sparkling</span><span class="clean">Clean</span>
+                <span class="cleaning">#1 in Cleaning</span>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+        </section>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="booking.html">Book Now</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo">
     </header>
-
-    <section class="hero">
-        <h1>Welcome to Sparkling Clean</h1>
-        <p>Your trusted cleaning partner for homes and businesses.</p>
-        <a href="booking.html" class="cta-button">Book Your Cleaning Today</a>
-    </section>
-
-    <section class="services-preview">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>Residential Cleaning</h3>
-            <p>High-quality cleaning for your home.</p>
-        </div>
-        <div class="service-item">
-            <h3>Office Cleaning</h3>
-            <p>Professional cleaning for your workspace.</p>
-        </div>
-        <div class="service-item">
-            <h3>Deep Cleaning</h3>
-            <p>Thorough cleaning for a spotless environment.</p>
-        </div>
-    </section>
-
+    <main>
+        <section class="hero">
+            <h1>Welcome to Sparkling Clean</h1>
+            <p>Your trusted cleaning partner for homes and businesses.</p>
+            <a href="booking.html" class="cta-button">Book Your Cleaning Today</a>
+        </section>
+        <section class="card">
+            <div class="item">
+                <h2>Professional Cleaning Services for Your Home</h2>
+                <p>At Sparkling Clean, we are dedicated to providing top-notch house cleaning services that leave your home spotless. Experience the difference with our expert team.</p>
+            </div>
+            <div class="item">
+                <h2>Our Commitment</h2>
+                <p>Sparkling Clean is committed to ensuring that your home is not only clean but also a healthy and comfortable environment for you and your family. We take pride in our attention to detail and personalized approach to cleaning.</p>
+            </div>
+            <div class="item">
+                <h2>Exceptional Cleaning Standards</h2>
+                <p>Our team upholds the highest standards of cleanliness, ensuring every corner of your home is sparkling clean.</p>
+            </div>
+            <div class="item">
+                <h2>Trained and Trustworthy Staff</h2>
+                <p>Our cleaners are trained professionals who are background-checked and dedicated to exceeding your expectations.</p>
+            </div>
+            <div class="item">
+                <h2>Eco-Friendly Cleaning Products</h2>
+                <p>We prioritize the use of eco-friendly products that are safe for your family, pets, and the environment.</p>
+            </div>
+            <div class="item">
+                <h2>Customized Cleaning Plans</h2>
+                <p>We tailor our cleaning services to meet your specific needs and preferences, ensuring a personalized cleaning experience.</p>
+            </div>
+            <div class="item">
+                <h2>Our promise</h2>
+                <p>We guarantee fast and discrete handling of all your business tasks. Our team of highly qualified employees is available 24/7 – because your satisfaction is our highest priority.</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Sparkling Clean. All rights reserved.</p>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 
 </html>

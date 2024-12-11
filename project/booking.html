@@ -9,46 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
     <header>
+        <section class="title">
+            <div class="lema">
+                <span class="sparkling">Sparkling</span><span class="clean">Clean</span>
+                <span class="cleaning">#1 in Cleaning</span>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+        </section>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="booking.html" class="active">Book Now</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo">
     </header>
+    <main>
+        <section class="hero">
+            <h1>Book Your Cleaning Service</h1>
+        </section>
+        <section class="card">
+            <form id="bookingForm" class="bookingForm">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="residential">Residential Cleaning</option>
+                    <option value="office">Office Cleaning</option>
+                    <option value="deep">Deep Cleaning</option>
+                </select>
 
-    <section class="booking-form">
-        <h1>Book Your Cleaning Service</h1>
-        <form id="bookingForm">
-            <label for="service">Select Service:</label>
-            <select id="service" name="service">
-                <option value="residential">Residential Cleaning</option>
-                <option value="office">Office Cleaning</option>
-                <option value="deep">Deep Cleaning</option>
-            </select>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
 
-            <label for="time">Preferred Time:</label>
-            <input type="time" id="time" name="time" required>
-
-            <button type="submit">Book Now</button>
-        </form>
-    </section>
-
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Sparkling Clean. All rights reserved.</p>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
     </footer>
-
-    <script src="scripts/script.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/book.js"></script>
 </body>
 </html>

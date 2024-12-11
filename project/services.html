@@ -9,43 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
     <header>
+        <section class="title">
+            <div class="lema">
+                <span class="sparkling">Sparkling</span><span class="clean">Clean</span>
+                <span class="cleaning">#1 in Cleaning</span>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+        </section>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="booking.html">Book Now</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo">
     </header>
-
-    <section class="service-details">
-        <h1>Our Cleaning Services</h1>
-        <div class="service-item">
-            <h2>Residential Cleaning</h2>
-            <p>We offer comprehensive residential cleaning to keep your home sparkling clean and fresh.</p>
-            <p><strong>Pricing: </strong>Starting at $99</p>
-        </div>
-        <div class="service-item">
-            <h2>Office Cleaning</h2>
-            <p>Our office cleaning services ensure a clean and healthy work environment for your team.</p>
-            <p><strong>Pricing: </strong>Starting at $150</p>
-        </div>
-        <div class="service-item">
-            <h2>Deep Cleaning</h2>
-            <p>Our deep cleaning services are perfect for tackling areas that need extra attention.</p>
-            <p><strong>Pricing: </strong>Starting at $199</p>
-        </div>
-    </section>
-
+    <main>
+        <section class="hero">
+            <h1>Our Cleaning Services</h1>
+            <p>Professional cleaning services</p>
+            <a href="booking.html" class="cta-button">Book Your Cleaning Today</a>
+        </section>
+        <section class="card">
+            <div class="item">
+                <h2>Residential Cleaning</h2>
+                <p>We offer comprehensive residential cleaning to keep your home sparkling clean and fresh.</p>
+                <p><strong>Pricing: </strong>Starting at $99</p>
+            </div>
+            <div class="item">
+                <h2>Office Cleaning</h2>
+                <p>Our office cleaning services ensure a clean and healthy work environment for your team.</p>
+                <p><strong>Pricing: </strong>Starting at $150</p>
+            </div>
+            <div class="item">
+                <h2>Deep Cleaning</h2>
+                <p>Our deep cleaning services are perfect for tackling areas that need extra attention.</p>
+                <p><strong>Pricing: </strong>Starting at $199</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Sparkling Clean. All rights reserved.</p>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
     </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

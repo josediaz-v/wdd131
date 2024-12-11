@@ -9,47 +9,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
     <header>
+        <section class="title">
+            <div class="lema">
+                <span class="sparkling">Sparkling</span><span class="clean">Clean</span>
+                <span class="cleaning">#1 in Cleaning</span>
+                <img src="images/logo.webp" alt="logo">
+            </div>
+        </section>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="booking.html">Book Now</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo">
     </header>
+    <main>
+        <section class="hero">
+            <h1>Contact Sparkling Clean</h1>
+            <p>If you have any questions or want to book a cleaning service, please reach out to us using the form below or by phone/email.</p>
+            <a href="booking.html" class="cta-button">Book Your Cleaning Today</a>
+        </section>
+        <section class="card">
+            <form id="contactForm" class="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <section class="contact-info">
-        <h1>Contact Sparkling Clean</h1>
-        <p>If you have any questions or want to book a cleaning service, please reach out to us using the form below or by phone/email.</p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <form id="contactForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Confirmation Message will appear here -->
-    <div id="confirmationMessage"></div> <!-- The message will appear here -->
-
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Sparkling Clean. All rights reserved.</p>
+        <p>&copy;<span id="year"></span> 🎮🎸 WDD 230 - Jose Diaz 👨🏻‍💻👨🏻‍👩🏻‍🧒🏻‍👦🏻 Lima,Perú ✈️ New Jersey,
+            United States</p>
+        <p id="lastmodified">Last Modification: </p>
     </footer>
-
-    <script src="scripts/script.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/contact.js"></script>
 </body>
 </html>
